@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple image filter</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #option {
+            display: flex;
+            gap: 15px;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        select {
+            height: fit-content;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="460" height="320"></canvas>
+    <div id="option">
+        <div class="option-item">
+            <p>Image: </p>
+            <select onchange="changeImage(this)">
+                <option value="athena.jpg" selected>Athena</option>
+                <option value="mona-lisa.jpg" >Mona Lisa</option>
+                <option value="theKiss.jpg" >The Kiss</option>
+                <option value="young-pearl.jpg" >Young Pearl</option>
+            </select>
+        </div>
+
+        <div class="option-item">
+            <p>Filter: </p>
+            <select onchange="changeFilter(this)">
+                <option value="darken" selected>Darken</option>
+                <option value="lighten" >Lighten</option>
+            </select>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

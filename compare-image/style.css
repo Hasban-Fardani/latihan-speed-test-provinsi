@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    position: absolute;
+    -webkit-appearance: none;
+    background: none;
+    width: 620px;
+    height: 400px;
+    z-index: 100;
+    margin-left: -10px;
+}
+
+.slider::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.grayscale {
+    width: 300px;
+    position: absolute;
+    overflow: hidden;
+    border-right: solid 2px #fff;
+}
+
+.grayscale img {
+    filter: grayscale(100);  
+}

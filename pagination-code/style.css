@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  border-radius: 100%;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px
+}
+
+.pagination-item {
+  background-color: rgb(29, 115, 212);
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  border-radius: 10px;
+  background-color: rgb(57, 57, 57);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination .arrow.disable { 
+  background-color: rgb(171, 171, 171) !important; 
+}
